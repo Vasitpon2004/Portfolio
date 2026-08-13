@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#top" class="logo">Vasitpon Khanuengkid<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="container">
+      <p class="hero__hi">Hi, I'm</p>
+      <h1 class="hero__name">Vasitpon Khanuengkid</h1>
+      <p class="hero__role">Full-Stack Developer</p>
+      <div class="hero__buttons">
+        <a href="#projects" class="btn btn--primary">See my work</a>
+        <a href="#contact" class="btn btn--outline">Contact me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title">About Me</h2>
+      <div class="about">
+        <div class="about__photo" aria-hidden="true">
+          <img src="picture\S__4112390.jpg" alt="VK">
+        </div>
+        <p class="about__text">
+          I'm a Computer Science student and developer based in Thailand, 
+          with a focus on building web applications that are simple to use and easy to maintain. 
+          I enjoy working on both the frontend and backend — from designing clean interfaces to writing solid code. 
+          When I'm not coding, I'm usually playing games like Roblox, exploring game development, or improving my own projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <h2 class="section__title">Projects</h2>
+
+      <div class="projects">
+        <div class="project-card">
+          <h3>Ledgerline</h3>
+          <p>A simple invoicing app for freelancers — create invoices, track payments, and send reminders automatically.</p>
+          <div class="tags">
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+          </div>
+          <a href="#" class="link">View project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Waypoint</h3>
+          <p>An internal dashboard that shows deploy status and history for a small dev team.</p>
+          <div class="tags">
+            <span>React</span>
+            <span>Go</span>
+          </div>
+          <a href="#" class="link">View project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Fieldkit</h3>
+          <p>An offline-friendly form app for collecting survey data, built for researchers in the field.</p>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>IndexedDB</span>
+          </div>
+          <a href="#" class="link">View project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills">
+        <div class="skill_group">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+
+        <div class="skill_group">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+
+        <div class="skill_group">
+          <h3>Other Skills</h3>
+          <ul>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <h2 class="section__title">Contact</h2>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXFBHxQjrwJhFlZBGRwzgTJVHmVrBjdSDxQMpqFBDlcFDXXBqZQdPXJvGRPZDvgfqSCQW" class="btn btn--primary">vasitpon.k@ku.th</a>
+      <a href="https://web.facebook.com/vasitpon.khanungkid.3/" class="btn btn--primary">Facebook</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Vasitpon Khanungkid. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
