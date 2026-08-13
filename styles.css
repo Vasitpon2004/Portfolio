@@ -160,7 +160,7 @@ a {
 
 .section__title {
   font-size: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -270,6 +270,10 @@ a {
    ============================================ */
 #contact {
   text-align: center;
+}
+.contact__desc {
+  color: var(--muted);
+  padding-bottom: 16px;
 }
 .btn--primary {
   margin: 8px 0;
