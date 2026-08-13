@@ -43,16 +43,20 @@ a {
    ============================================ */
 .btn {
   display: inline-block;
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: 11px 23px;
+  border-radius: 6px;
   font-weight: 600;
-  font-size: 15px;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
 }
 
 .btn--primary {
   background: var(--accent);
   color: #ffffff;
+}
+.btn--primary-non {
+  background: var(--accent);
+  color: #ffffff;
+  pointer-events: none; /* Disable click events */
 }
 
 .btn--outline {
@@ -277,8 +281,14 @@ a {
 }
 .btn--primary {
   margin: 8px 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.btn--primary-non {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
 }
 
