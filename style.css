@@ -26,7 +26,7 @@ body{
   margin:0;
   background:var(--bg);
   color:var(--ink);
-  font-family:'Inter', system-ui, sans-serif;
+  font-family:'cursive', system-ui, sans-serif;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
 }
@@ -131,6 +131,9 @@ nav.links a:hover::after{ transform:scaleX(1); }
 /* ============ Hero ============ */
 .hero{
   position:relative;
+  min-height:calc(100dvh - 60px);
+  display: flex;
+  align-items:center;
   padding:clamp(70px,12vw,140px) 0 clamp(60px,10vw,110px);
   overflow:hidden;
 }
@@ -148,8 +151,14 @@ nav.links a:hover::after{ transform:scaleX(1); }
 }
 .hero h1 em{
   font-style:italic;
-  font-weight:400;
+  font-weight:500;
   color:var(--forest);
+}
+.hero h2{
+  font-size:clamp(1rem, 3vw, 2rem);
+  font-weight:500;
+  margin-top:12px;
+  align-items: center;
 }
 .hero .role{
   margin-top:22px;
@@ -215,89 +224,61 @@ section{ padding:clamp(60px,10vw,110px) 0; }
 }
 
 /* ============ About ============ */
-.about-grid{
-  display:grid;
-  grid-template-columns:1.1fr 1fr;
-  gap:clamp(40px,6vw,90px);
-  align-items:start;
-}
-.about h2{ font-size:clamp(1.9rem,3.4vw,2.6rem); font-weight:500; margin-top:14px; }
-.about-bio p{ margin:18px 0 0; color:var(--ink-soft); max-width:56ch; }
-blockquote.philosophy{
-  margin:34px 0 0;
-  padding:22px 0 22px 24px;
-  border-left:2px solid var(--forest);
-  font-family:'Fraunces', serif;
-  font-style:italic;
-  font-size:1.15rem;
-  color:var(--ink);
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr; /* ให้ฝั่งซ้ายกว้างกว่าเล็กน้อยเพราะเนื้อหาเยอะ */
+  gap: clamp(40px, 6vw, 90px);
+  align-items: start;
 }
 
-.skills-block + .skills-block{ margin-top:34px; }
-.skills-block h3{
-  font-family:'JetBrains Mono', monospace;
-  font-size:.76rem;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--sage);
-  font-weight:500;
-  margin-bottom:16px;
-}
-.chip-row{ display:flex; flex-wrap:wrap; gap:10px; }
-.chip{
-  font-size:.85rem;
-  padding:8px 14px;
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  background:var(--paper);
-  color:var(--ink-soft);
-  transition:border-color .25s var(--ease), color .25s var(--ease);
-}
-.chip:hover{ border-color:var(--forest); color:var(--forest); }
-
-.soft-list li{
-  position:relative;
-  padding-left:22px;
-  margin-top:10px;
-  color:var(--ink-soft);
-  font-size:.95rem;
-}
-.soft-list li::before{
-  content:"";
-  position:absolute; left:0; top:.55em;
-  width:8px; height:8px;
-  border:1.4px solid var(--sage);
-  border-radius:50%;
+/* ส่วน Skills ที่อยู่ใต้ About-bio */
+.skills-section {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
 }
 
-/* ============ Education ============ */
-.edu-list{ margin-top:36px; }
-.edu-item{
-  display:grid;
-  grid-template-columns:180px 1fr;
-  gap:24px;
-  padding:22px 0;
-  border-top:1px solid var(--line);
-}
-.edu-item:last-child{ border-bottom:1px solid var(--line); }
-.edu-year{
-  font-family:'JetBrains Mono', monospace;
-  font-size:.82rem;
-  color:var(--sage);
-}
-.edu-title{
-  font-size:1.15rem;
-  font-weight:500;
-}
-.edu-sub{
-  margin-top:6px;
-  color:var(--ink-soft);
-  font-size:.92rem;
-}
-@media (max-width: 600px){
-  .edu-item{ grid-template-columns:1fr; gap:6px; }
+.skills-inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* แบ่งทักษะในฝั่งซ้ายออกเป็น 2 คอลัมน์ย่อย */
+  gap: 32px;
 }
 
+.skills-inner-grid .skills-block {
+  margin-top: 0;
+}
+
+/* ส่วนรูปภาพฝั่งขวา */
+.profile-wrapper {
+  position: sticky; /* ล็อกรูปให้อยู่กับที่ เวลาผู้ใช้เลื่อนอ่านข้อมูลฝั่งซ้ายที่ยาวกว่า */
+  top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic-large {
+  max-width: 100%;
+}
+
+.profile-pic-large img {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* ปรับให้รองรับหน้าจอมือถือ */
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์เมื่อหน้าจอเล็ก */
+  }
+  .skills-inner-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-wrapper {
+    position: static;
+    order: -1; /* ย้ายรูปขึ้นไปแสดงด้านบนสุดในจอมือถือ */
+    margin-bottom: 24px;
+  }
+}
 /* ============ Projects ============ */
 .section-head{
   display:flex; justify-content:space-between; align-items:flex-end;

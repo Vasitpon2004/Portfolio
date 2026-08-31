@@ -5,11 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vasitpon Khanuengkid — Full-Stack Developer</title>
 <meta name="description" content="Personal portfolio of Vasitpon Khanuengkid, Computer Science student at Kasetsart University focused on Full-Stack Development." />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,12 +13,11 @@
   <div class="nav-inner">
     <a href="#top" class="brand"><span class="mark">VK</span>Vasitpon Khanuengkid</a>
     <nav class="links" id="navLinks">
-      <a href="#about">About</a>
+      <a href="#about">About Me</a>
       <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="#contact" class="nav-cta">Let's talk</a>
     <button class="burger" id="burgerBtn" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -31,119 +25,99 @@
 </header>
 
 <main id="top">
-
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Portfolio / 2026</span>
-        <h1>Hi, I'm<br><em>Vasitpon Khanuengkid</em></h1>
-        <div class="role">Computer Science Student, Kasetsart University — <b>Full-Stack Developer (Internship)</b></div>
-        <p class="lede">
-          A Computer Science student at Kasetsart University with a strong interest in Full-Stack Development.
-          I enjoy building complete web applications from the user interface all the way to backend logic,
-          and I'm currently looking for an internship to apply my skills and learn from real-world projects.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
-          <a href="#projects" class="btn btn-ghost">View projects</a>
-        </div>
-      </div>
-      <div class="hero-index" aria-hidden="true">
-        01 — About<br>
-        02 — Education<br>
-        03 — Projects<br>
-        04 — Contact
+        <h1>My Portfolio</h1>
+        <h2>Mr. Vasitpon Khanuengkid</h2>
       </div>
     </div>
-
-    <svg class="vein" viewBox="0 0 500 600" aria-hidden="true">
-      <path d="M420 10 C 380 120, 340 160, 300 220 S 200 340, 160 420 S 90 540, 40 580" />
-      <path class="thin" d="M340 90 C 320 140, 280 150, 250 190" />
-      <path class="thin" d="M280 220 C 260 260, 220 270, 190 300" />
-      <path class="thin" d="M220 340 C 200 380, 160 390, 130 420" />
-      <path class="thin" d="M150 450 C 130 480, 100 490, 75 510" />
-    </svg>
   </section>
-
   <hr class="divider wrap" />
 
-  <!-- ============ ABOUT ============ -->
-  <section id="about" class="about reveal">
-    <div class="wrap about-grid">
-      <div>
-        <span class="eyebrow">01 · About</span>
-        <h2>Learning by building<br>every project is a real lesson</h2>
-        <div class="about-bio">
-          <p>
-            I'm a 4th-year Computer Science student at Kasetsart University, Kamphaeng Saen Campus,
-            with a particular interest in Full-Stack Development. I like understanding a system end to end —
-            from how the interface is designed to how the database and server-side logic are structured.
-          </p>
-          <p>
-            Throughout my studies I've worked on several hands-on projects, from designing a GUI in Java
-            to building complete web applications with React and PostgreSQL. I'm currently looking for
-            an internship opportunity to gain experience working with a real development team.
-          </p>
-        </div>
-        <blockquote class="philosophy">
-          "The best way to learn is to build something that actually works — then learn from what goes wrong."
-        </blockquote>
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about reveal">
+  <div class="wrap about-grid">
+    
+    <!-- ฝั่งซ้าย: ประวัติส่วนตัว (About-bio) + ทักษะทั้งหมด (Skills) -->
+    <div class="about-left-column">
+      <span class="eyebrow">About Me</span>
+      <h2>About Me</h2>
+      <div class="about-bio">
+        <p>
+          I'm a Computer Science student at Kasetsart University with a strong
+          interest in Full-Stack Development. I enjoy creating web applications that are both functional
+          and visually appealing, and I'm always eager to learn new technologies and improve my skills.
+        </p>
+        <p>
+          My goal is to contribute to innovative projects and collaborate with talented teams to build
+          impactful software solutions. I'm currently seeking internship opportunities where I can apply
+          my knowledge and gain practical experience in the field of web development.
+        </p>
       </div>
 
-      <div>
-        <div class="skills-block">
-          <h3>Frontend</h3>
-          <div class="chip-row">
-            <span class="chip">HTML5</span>
-            <span class="chip">CSS3</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">TypeScript</span>
-            <span class="chip">React</span>
-            <span class="chip">Tailwind CSS</span>
+      <!-- หมวดหมู่ Skills อยู่ใต้ about-bio (ภายในฝั่งซ้าย) -->
+      <div class="skills-section">
+        <h3 style="font-size: 1.4rem; margin-bottom: 24px;">Technical & Soft Skills</h3>
+        
+        <div class="skills-inner-grid">
+          <div class="skills-block">
+            <h3>Frontend & Design</h3>
+            <div class="chip-row">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Figma</span>
+            </div>
           </div>
-        </div>
-        <div class="skills-block">
-          <h3>Backend &amp; Databases</h3>
-          <div class="chip-row">
-            <span class="chip">Python</span>
-            <span class="chip">Java</span>
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">MySQL</span>
+
+          <div class="skills-block">
+            <h3>Backend & Tools</h3>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Git &amp; GitHub</span>
+            </div>
           </div>
-        </div>
-        <div class="skills-block">
-          <h3>Tools</h3>
-          <div class="chip-row">
-            <span class="chip">Git &amp; GitHub</span>
-            <span class="chip">Figma</span>
-          </div>
-        </div>
-        <div class="skills-block">
-          <h3>Soft Skills</h3>
-          <ul class="soft-list">
-            <li>Communication</li>
-            <li>Collaboration</li>
-            <li>Adaptability</li>
-            <li>Responsibility</li>
-          </ul>
-        </div>
-        <div class="skills-block">
-          <h3>Languages</h3>
-          <div class="chip-row">
-            <span class="chip">Thai</span>
-            <span class="chip">English</span>
+
+          <div class="skills-block" style="grid-column: 1 / -1;">
+            <h3>Soft Skills & Languages</h3>
+            <div style="display: flex; gap: 32px; flex-wrap: wrap; margin-top: 12px;">
+              <ul class="soft-list">
+                <li>Communication & Collaboration</li>
+                <li>Adaptability & Responsibility</li>
+              </ul>
+              <div class="chip-row" style="align-items: center;">
+                <span class="chip">Thai</span>
+                <span class="chip">English</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- ฝั่งขวา: รูปภาพโปรไฟล์ขนาดใหญ่เพียงอย่างเดียว -->
+    <div class="about-right-column profile-wrapper">
+      <div class="profile-pic-large">
+        <img src="picture\3252  1in6 1.5in6 นศ.ม.เกษตร  ฉากเทา ไฟล์ด้วย  29-04-66 12.00 (1).JPG" alt="Vasitpon Khanuengkid" />
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <hr class="divider wrap" />
 
   <!-- ============ EDUCATION ============ -->
   <section id="education" class="reveal">
     <div class="wrap">
-      <span class="eyebrow">02 · Education</span>
+      <span class="eyebrow">Education</span>
       <h2 style="font-size:clamp(1.9rem,3.4vw,2.6rem); font-weight:500; margin-top:14px;">Academic background</h2>
 
       <div class="edu-list">
@@ -170,34 +144,15 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <span class="eyebrow">03 · Projects</span>
-          <h2>Featured work</h2>
+          <span class="eyebrow">Projects experience</span>
+          <h2>Projects experience</h2>
         </div>
-        <p>A selection of projects that reflect my approach — from design through to real implementation.</p>
       </div>
 
       <div class="projects-list">
 
         <!-- Project 1 -->
         <article class="project">
-          <div class="project-visual">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#2E5940"/>
-                  <stop offset="100%" stop-color="#16241C"/>
-                </linearGradient>
-              </defs>
-              <rect width="400" height="300" fill="url(#g1)"/>
-              <g stroke="#B9CBBD" stroke-width="1" opacity="0.5">
-                <line x1="0" y1="60" x2="400" y2="60"/>
-                <line x1="0" y1="150" x2="400" y2="150"/>
-                <line x1="0" y1="240" x2="400" y2="240"/>
-              </g>
-              <circle cx="330" cy="70" r="26" fill="none" stroke="#7C9885" stroke-width="1.5"/>
-              <rect x="40" y="120" width="160" height="90" rx="2" fill="none" stroke="#7C9885" stroke-width="1.5"/>
-            </svg>
-          </div>
           <div class="project-body">
             <span class="project-num">Project 01 · 2025 (in progress)</span>
             <h3>Class Scheduling System</h3>
@@ -213,31 +168,12 @@
               <span class="stack-tag">PostgreSQL</span>
               <span class="stack-tag">NestJS</span>
             </div>
-            <a href="#" class="project-link">View project details <span class="arrow">→</span></a>
+            <a href="https://github.com/Vasitpon2004/Class-Scheduling-System" class="project-link">View project details <span class="arrow">→</span></a>
           </div>
         </article>
 
         <!-- Project 2 -->
         <article class="project">
-          <div class="project-visual">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
-                  <stop offset="0%" stop-color="#1F3D2C"/>
-                  <stop offset="100%" stop-color="#4B5A50"/>
-                </linearGradient>
-              </defs>
-              <rect width="400" height="300" fill="url(#g2)"/>
-              <g fill="none" stroke="#B9CBBD" stroke-width="1.4" opacity="0.6">
-                <path d="M20 250 L100 180 L160 210 L230 120 L300 150 L380 60"/>
-              </g>
-              <g fill="#F0F3EE" opacity="0.85">
-                <circle cx="100" cy="180" r="4"/>
-                <circle cx="230" cy="120" r="4"/>
-                <circle cx="380" cy="60" r="4"/>
-              </g>
-            </svg>
-          </div>
           <div class="project-body">
             <span class="project-num">Project 02 · 2025</span>
             <h3>Target-Research (3rd year)</h3>
@@ -247,35 +183,18 @@
               in SQL to support application features.
             </p>
             <div class="stack-row">
-              <span class="stack-tag">Figma</span>
               <span class="stack-tag">HTML5</span>
               <span class="stack-tag">CSS3</span>
-              <span class="stack-tag">SQL</span>
+              <span class="stack-tag">MySQL</span>
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">Django</span>
             </div>
-            <a href="#" class="project-link">View project details <span class="arrow">→</span></a>
+            <a href="https://github.com/highfireco/Target-Research" class="project-link">View project details <span class="arrow">→</span></a>
           </div>
         </article>
 
         <!-- Project 3 -->
         <article class="project">
-          <div class="project-visual">
-            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="g3" cx="30%" cy="30%" r="80%">
-                  <stop offset="0%" stop-color="#2E5940"/>
-                  <stop offset="100%" stop-color="#16241C"/>
-                </radialGradient>
-              </defs>
-              <rect width="400" height="300" fill="url(#g3)"/>
-              <g fill="none" stroke="#7C9885" stroke-width="1.2" opacity="0.7">
-                <rect x="60" y="50" width="80" height="80" rx="2"/>
-                <rect x="170" y="50" width="80" height="80" rx="2"/>
-                <rect x="280" y="50" width="60" height="80" rx="2"/>
-                <rect x="60" y="160" width="280" height="18" rx="2"/>
-                <rect x="60" y="188" width="200" height="18" rx="2"/>
-              </g>
-            </svg>
-          </div>
           <div class="project-body">
             <span class="project-num">Project 03 · 2024</span>
             <h3>Student Management System (2nd year)</h3>
@@ -285,9 +204,10 @@
             </p>
             <div class="stack-row">
               <span class="stack-tag">Java</span>
-              <span class="stack-tag">GUI Design</span>
+              <span class="stack-tag">MySQL</span>
+              
             </div>
-            <a href="#" class="project-link">View project details <span class="arrow">→</span></a>
+            <a href="https://github.com/LetUsTakeANapForever/Student-Management-System" class="project-link">View project details <span class="arrow">→</span></a>
           </div>
         </article>
 
@@ -299,7 +219,7 @@
   <section id="contact" class="reveal">
     <div class="wrap">
       <div class="contact">
-        <span class="eyebrow">04 · Contact</span>
+        <span class="eyebrow">Contact</span>
         <h2>Interested in working together?</h2>
         <p>Currently open to Full-Stack Development internship opportunities — happy to learn and contribute to a real development team.</p>
         <div class="contact-links">
@@ -311,9 +231,9 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             064-829-6093
           </a>
-          <a class="contact-pill" href="https://github.com/yourname" target="_blank" rel="noopener">
+          <a class="contact-pill" href="https://github.com/Vasitpon2004" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a9 9 0 0 0-2.85 17.54c.45.08.61-.2.61-.43v-1.7c-2.5.55-3.03-1.07-3.03-1.07-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.38 2.11.98 2.63.75.08-.58.32-.98.57-1.2-2-.23-4.1-1-4.1-4.45 0-.98.35-1.79.92-2.42-.09-.23-.4-1.15.09-2.4 0 0 .75-.24 2.47.92a8.5 8.5 0 0 1 4.5 0c1.72-1.16 2.47-.92 2.47-.92.49 1.25.18 2.17.09 2.4.57.63.92 1.44.92 2.42 0 3.46-2.11 4.22-4.12 4.44.33.29.62.85.62 1.72v2.55c0 .24.16.51.62.43A9 9 0 0 0 12 3z"/></svg>
-            github.com/yourname
+            github.com/Vasitpon2004
           </a>
         </div>
       </div>
